@@ -138,6 +138,47 @@ str = "Python Is Good Language"
 print(str.istitle())
 print(mystr.istitle())
 
+#The join() string method returns a string by joining all the elements of an iterable, separated by a string separator.
+st = ","
+str = "1234"
+print(st.join(str))#syntax = string.join(iterable)
+
+#The string ljust() method returns a left-justified string of a given minimum width.
+print(str.ljust(7, "0"))#syntax = string.ljust(width[, fillchar])
+
+#The string rjust() method returns a right-justified string of a given minimum width.
+print(str.rjust(8, "0"))#syntax = string.rjust(width[, fillchar])
+
+#The string swapcase() method converts all uppercase characters to lowercase and 
+#all lowercase characters to uppercase characters of the given string, and returns it.
+print(mystr.swapcase())
+
+#The lstrip() method returns a copy of the string with leading characters removed (based on the string argument passed).
+str = "33334$$$%&%^^ My name is Kanak Gupta."
+print(str.lstrip("34$%&%^ "))
+
+#The rstrip() method returns a copy of the string with trailing characters removed (based on the string argument passed).
+str = "My name is Kanak Gupta.33334$$$%&%^^ "
+print(str.rstrip("34$%&%^ "))
+
+#The strip() method returns a copy of the string by removing both
+#the leading and the trailing characters (based on the string argument passed).
+str = "33334$$$%&%^^ My name is Kanak Gupta.33334$$$%&%^^ "
+print(str.strip("34$%&%^ "))
+
+#The partition() method splits the string at the first occurrence of the argument string and 
+#returns a tuple containing the part the before separator, argument string and the part after the separator.
+print(mystr.partition("is"))
+
+#The string maketrans() method returns a mapping table for translation usable for translate() method.
+str = "abcdefghijklmnopqrstuvwxyz"
+st = "abcdefghijklmnopqrstuvw"
+print(str.maketrans(st, mystr))
+
+
+
+
+
 
 
 
