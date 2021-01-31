@@ -21,6 +21,10 @@ print(grocery[4]+"\n")
 for i in grocery:
     print(i)
 
+n = [4,8,6,2,1,8,15,45,45,12,48,54,]
+
+
+
 
 
 
