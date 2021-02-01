@@ -37,3 +37,6 @@ print(d.pop(4))#syntax = dictionary.pop(key[, default])
 
 #clear dictionary
 print(d.clear())#clear method used to clear the dictionary
+
+point = {'x':4,'y':-5}
+print('{x} {y}'.format(**point))

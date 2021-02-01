@@ -175,22 +175,52 @@ str = "abcdefghijklmnopqrstuvwxyz"
 st = "abcdefghijklmnopqrstuvw"
 print(str.maketrans(st, mystr))
 
+#The rpartition() splits the string at the last occurrence of the argument string and returns a tuple containing the part the before separator, 
+#argument string and the part after the separator.
+str = "I am Kanak Gupta.I am here to learn Python."
+print(str.rpartition("am"))#see the last ocurrence of seprator
 
+#The string translate() method returns a string where each character is mapped to its corresponding character in the translation table.
+str = "abcdefghijklmnopqrstuvwxyz"
+st = "abcdefghijklmnopqrstuvw"
+t = str.maketrans(st, mystr)
+print(str.translate(t))
 
+#The replace() method returns a copy of the string where all occurrences of a substring is replaced with another substring.
+str = "I am Kanak Gupta.I am here to learn Python."
+print(str.replace("am", "are", 4))
 
+#The rindex() method returns the highest index of the substring inside the string (if found).
+#If the substring is not found, it raises an exception.
+print(str.rfind("am"))
 
+#The split() method breaks up a string at the specified separator and returns a list of strings.
+print(mystr.split(" ",60))
 
+#The rsplit() method splits string from the right at the specified separator and returns a list of strings.
+print(mystr.rsplit(" "))
 
+#The splitlines() method splits the string at line breaks and returns a list of lines in the string.
+str = "My\nName\nis\nKanak\nGupta"
+print(mystr.splitlines())
+print(str.splitlines(True))
 
+#The zfill() method returns a copy of the string with '0' characters padded to the left.
+print(mystr.zfill(40))
 
+#The format_map() method is similar to str.format(**mapping) except that str.format(**mapping) 
+# creates a new dictionary whereas str.format_map(mapping) doesn't.
+'''
+The format_map(mapping) is similar to str.format(**mapping) method.
+The only difference is that str.format(**mapping) copies the dict whereas str.
+format_map(mapping) makes a new dictionary during method call.
+This can be useful if you are working with a dict subclass.
+'''
+point = {'x':4,'y':-5}
+print('{x} {y}'.format_map(point))
 
+#The title() method returns a string with first letter of each word capitalized; a title cased string.
+print(mystr.title())
 
-
-
-
-
-
-
-
-
-
+#The isascii() method returns True if the string is empty or all characters in the string are ASCII.
+print(mystr.isascii())
